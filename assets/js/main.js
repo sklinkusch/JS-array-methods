@@ -8,3 +8,12 @@ function reverseNumber(number) {
 }
 
 console.log(reverseNumber(1234));
+
+const revNumberShort = number =>
+  Number(
+    String(number)
+      .split("")
+      .reverse()
+      .join("")
+  );
+console.log(revNumberShort(4567));
